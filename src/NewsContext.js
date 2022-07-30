@@ -17,7 +17,7 @@ export const NewsContextProvider = (props) => {
             `https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}`
             ).then(response => setData(response.data))
             .catch(error => console.log(error))
-    },[data])
+    },[])
 
     return(
         <NewsContext.Provider value={{data}}>
