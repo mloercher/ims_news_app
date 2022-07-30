@@ -1,11 +1,14 @@
 
 import './App.css';
+import React, { createContext, useEffect, useState } from 'react';
+import axios from 'axios';
+import { NewsContextProvider } from "./NewsContext"
 
 function App() {
   return (
-    <div className="App">
-     <h1>HIIIIII</h1>
-    </div>
+    <NewsContextProvider>
+      <div> HIIIII</div>
+    </NewsContextProvider>
   );
 }
 
