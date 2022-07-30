@@ -42,11 +42,12 @@
 } */
 
 .app-container{
-  background-color: black;
+  background-color: white;
+  padding-top: 3%;
 }
 
 .app-container h1{
-  color: white;
+  color: black;
   margin-top: 0%;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -54,4 +55,8 @@
 .header-cont{
   display: flex;
   justify-content: center;
+  border-bottom: double black 2px;
+}
+.header-cont h1{
+ font-family: cursive;
 }
