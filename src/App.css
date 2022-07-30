@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* .app-container{
+  background-color: #282c34;
+} */
+
+.app-container{
+  background-color: black;
+}
+
+.app-container h1{
+  color: white;
+  margin-top: 0%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-cont{
+  display: flex;
+  justify-content: center;
+}

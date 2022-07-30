@@ -1,0 +1,27 @@
+.news-app{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.news-item {
+    width: 80%;
+    height: 75%;
+    padding: 1%;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: cornflowerblue;
+}
+
+.news-img{
+    width: 100%;
+    height: 60%;
+}
+
+
+.art-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
