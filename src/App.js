@@ -8,8 +8,10 @@ import Feed from './components/Feed'
 function App() {
   return (
     <NewsContextProvider>
-      <Feed />
-      <div> HIIIII</div>
+      <div> 
+        HIIII
+        <Feed /> 
+      </div>
     </NewsContextProvider>
   );
 }
