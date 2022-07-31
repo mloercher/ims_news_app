@@ -7,8 +7,6 @@ export const NewsContext = createContext()
 export const NewsContextProvider = (props) => {
 
     const [data,setData] = useState()
-    // const api_key = process.env.REACT_APP_API_KEY
-   
 
     useEffect(() => {
         const api_key = process.env.REACT_APP_API_KEY
@@ -18,6 +16,7 @@ export const NewsContextProvider = (props) => {
             ).then(response => setData(response.data))
             .catch(error => console.log(error))
     },[])
+
 
     return(
         <NewsContext.Provider value={{data}}>

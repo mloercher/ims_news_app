@@ -12,9 +12,9 @@ function App() {
   return (
     <NewsContextProvider>
       <Header />
-      <div className='app-container'> 
+      {/* <div className='app-container'>  */}
         <Feed /> 
-      </div>
+      {/* </div> */}
     </NewsContextProvider>
   );
 }

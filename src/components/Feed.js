@@ -3,18 +3,24 @@ import { NewsContext } from "../NewsContext";
 import Article from "./Article";
 
 
-function Feed(props) {
+function Feed() {
+
+
   const { data } = useContext(NewsContext);
   console.log(data)
+
+
   return (
+
     <div className="feed-container">
-     {data
-          ? data.articles.map((news) => (
-              <Article data={news}
-              key={news.url} 
-             />
-            ))
-          : "Loading"}
+      {data ? data.articles
+        .sort((a, b) => (a.title > b.title ) ? 1 : -1)
+        .map((newsStory) => (
+          <Article data={newsStory}
+            key={newsStory.url}
+          />
+        ))
+        : "Loading"}
     </div>
   )
 }
