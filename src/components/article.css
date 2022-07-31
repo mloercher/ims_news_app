@@ -5,8 +5,8 @@
 }
 
 .news-item {
-    width: 80%;
-    height: 75%;
+    width: 93%;
+    /* height: 75%; */
     padding: 1%;
     border: solid black 1px;
     border-radius: 5px;
@@ -18,6 +18,8 @@
     width: 100%;
     height: 60%;
 }
+
+
 
 
 .art-title{

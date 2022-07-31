@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NewsContext } from "../NewsContext";
 import Article from "./Article";
+import './feed.css'
 
 
 function Feed() {
