@@ -27,3 +27,19 @@
     display: flex;
     justify-content: center;
 }
+
+.news-description{
+    font-size: 100%;
+}
+
+
+@media (max-width: 420px) {
+   .news-description{
+    font-size: 50%;
+   }
+
+   .news-img{
+    height: 50%;
+    width: 100%;
+   }
+  }

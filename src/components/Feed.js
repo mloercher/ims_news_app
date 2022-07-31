@@ -15,7 +15,7 @@ function Feed() {
 
     <div className="feed-container">
       {data ? data.articles
-        .sort((a, b) => (a.title > b.title ) ? 1 : -1)
+        .sort((a, b) => (a.publishedAt > b.publishedAt ) ? 1 : -1)
         .map((newsStory) => (
           <Article data={newsStory}
             key={newsStory.url}
