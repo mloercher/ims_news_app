@@ -3,7 +3,7 @@ import './header.css'
 
 function Header() {
     const date = new Date();
-    // console.log(date)
+//    grabbing only the date fom Date() object
     let onlyDate = date.toString().slice(0, 16)
     
 

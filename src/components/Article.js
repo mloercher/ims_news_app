@@ -3,6 +3,7 @@ import './article.css'
 
 function Article({data}) {
 
+// single news article below
   return (
     <div className='news-app'>
       <div className='news-item'>

@@ -8,6 +8,7 @@ export const NewsContextProvider = (props) => {
 
     const [data,setData] = useState()
 
+    // fetching data from API and then saving response to 'data' variable
     useEffect(() => {
         const api_key = process.env.REACT_APP_API_KEY
         axios
@@ -18,6 +19,7 @@ export const NewsContextProvider = (props) => {
     },[])
 
 
+    // wrapping all children in NewsContext.Provider--allowing us to grab above data and 'import' to any component that needs data
     return(
         <NewsContext.Provider value={{data}}>
             {props.children}
