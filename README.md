@@ -1,6 +1,6 @@
-# NEWSFEED
+# just_the_news
 
-Simple react-powered newsfeed sourcing from newsapi 
+Simple react-powered newsfeed sourcing from newsapi.org
 
 
 ## Installation
