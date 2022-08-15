@@ -1,6 +1,6 @@
 {
-  "homepage":"http://mloercher.github.io/ims_news_app",
-  "name": "ims_news_app",
+  "homepage":"http://mloercher.github.io/just_the_news",
+  "name": "just_the_news",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
