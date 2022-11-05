@@ -1,14 +1,16 @@
 
-@media (min-width: 1200px) {
-  .feed-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 2%;
-    background-color: white;
-  }
-}
+
 
 .feed-container {
     padding-top: 2%;
     background-color: white;
+  }
+
+  @media (min-width: 1200px) {
+    .feed-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 2%;
+      background-color: white;
+    }
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 
-function Header() {
+function Header(props) {
     const date = new Date();
 //    grabbing only the date fom Date() object
     let onlyDate = date.toString().slice(0, 16)
@@ -11,7 +11,8 @@ function Header() {
     return (
 
         <div className='header-cont'>
-            <h1 className='header-title'>NEWSFEED</h1>   
+            <h1 className='header-title'
+            ></h1>   
             {onlyDate}
         </div>
 

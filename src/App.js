@@ -5,16 +5,18 @@ import Header from './components/Header';
 // import axios from 'axios';
 import { NewsContextProvider } from "./NewsContext"
 import Feed from './components/Feed'
+import Handler from './components/Handler';
+
+
 
 
 function App() {
-  
+
   return (
     <NewsContextProvider>
-      <Header />
-      {/* <div className='app-container'>  */}
-        <Feed /> 
-      {/* </div> */}
+      <div className='main-container'>
+      <Handler />
+      </div>
     </NewsContextProvider>
   );
 }

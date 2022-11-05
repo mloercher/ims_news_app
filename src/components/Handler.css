@@ -1,0 +1,15 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+}
+
+.item-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
