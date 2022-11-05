@@ -26,9 +26,9 @@ function Handler() {
                     'flex-direction': 'column',
                     'justify-content': 'center',
                     'font-family': 'cursive',
-                    'height': '50vh',
+                    'height': '45vh',
                     'align-items': 'center',
-                    'background': 'linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%)',
+                    'background': 'linear-gradient(180deg, rgb(26, 23, 23) 0%, rgb(28, 27, 27) 100%)',
                     'color': 'white',
                     'font-size': '5rem',
                     'width': '100vw'
@@ -47,7 +47,7 @@ function Handler() {
                     'text-align': 'center',
                     'padding-top': '2%',
                     'width': '100vw',
-                    'background': '#fbf5f3'
+                    'background': 'linear-gradient(180deg, rgb(28, 27, 27) 22%, rgba(205,252,113,1) 41%)'
                     // 'justify-content':'center',
                     // 'align-content':'center'
                     // 'align-items':'center'
@@ -69,7 +69,7 @@ function Handler() {
                     'justify-content': 'center',
                     'font-family': 'cursive',
                     'color': 'white',
-                    'background': 'linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%)'
+                    'background': 'linear-gradient(180deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%)'
                 }
             }
 
@@ -92,7 +92,7 @@ function Handler() {
                                     <h1>{article.title}</h1>
                                     {article.title}
                                     {article.description}
-                                    <img style={{ 'height': '100%', 'width': '100%' }} src={article.urlToImage} alt='headline pic'></img>
+                                    <a href={article.url}><img style={{ 'height': '100%', 'width': '100%', 'objectFit': 'cover' }} src={article.urlToImage} alt='headline pic'></img></a>
                                 </div>
 
                             )
