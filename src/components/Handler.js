@@ -26,11 +26,11 @@ function Handler() {
                     'flex-direction': 'column',
                     'justify-content': 'center',
                     'font-family': 'cursive',
+                    'font-size':'60px',
                     'height': '45vh',
                     'align-items': 'center',
                     'background': 'linear-gradient(180deg, rgb(26, 23, 23) 0%, rgb(28, 27, 27) 100%)',
                     'color': 'white',
-                    'font-size': '5rem',
                     'width': '100vw'
                 },
                 // date: onlyDate
