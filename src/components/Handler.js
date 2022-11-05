@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import './Handler.css'
 import { NewsContext } from "../NewsContext";
+import { REPEATABLEREAD } from "sequelize/dist/lib/table-hints";
 
 
 
@@ -36,15 +37,18 @@ function Handler() {
             component: 'Feed',
             params: {
                 api: data,
-                text: 'FEED',
                 style: {
                     'display': 'flex',
-                    'flex-wrap': 'wrap',
-                    // 'flex-direction':'column',
-                    'align-items':'center',
+                    'flex-wrap':'wrap',
                     'justify-content':'center',
+                    'text-align':'center',
                     'padding-top': '2%',
-                    'background-color': 'white'
+                    'width': '100vw',
+                    'background':'orange'
+                    // 'justify-content':'center',
+                    // 'align-content':'center'
+                    // 'align-items':'center'
+
                 }
             }
         },
@@ -70,28 +74,27 @@ function Handler() {
 
     // console.log(serverObj[0])
     return (
-        <div className='main-container'>
+        <>
             {serverObj.map((item, index) => {
                 return (
                     <div key={index} style={item.params.style}>
-                        {/* {item.params.children ? item.params.children : " "} */}
                         {item.params.text ? item.params.text : ''}
                         {/* {date ? item.params.date : null} */}
                         {item.params.api ? data.articles.map((article, index) => {
                             return (
-                                <div className="">
-                                    <div key={index}>
-                                        {article.title}
-                                        {article.description}
-                                        <img src={article.urlToImage} alt='headline pic'></img>
-                                    </div>
+                                // "CARD"
+                                <div className='article-card' key={index}>
+                                    {article.title}
+                                    {article.description}
+                                    <img style={{ 'height': '40%', 'width': '40%' }} src={article.urlToImage} alt='headline pic'></img>
                                 </div>
+
                             )
                         }) : null}
                     </div>
                 );
             })}
-        </div>
+        </>
 
     )
 
