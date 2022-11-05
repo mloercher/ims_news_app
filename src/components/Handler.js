@@ -33,7 +33,6 @@ function Handler() {
                     'color': 'white',
                     'width': '100vw'
                 },
-                // date: onlyDate
             },
         },
         {
@@ -48,10 +47,6 @@ function Handler() {
                     'padding-top': '2%',
                     'width': '100vw',
                     'background': 'linear-gradient(180deg, rgb(28, 27, 27) 22%, rgba(205,252,113,1) 41%)'
-                    // 'justify-content':'center',
-                    // 'align-content':'center'
-                    // 'align-items':'center'
-
                 }
             }
         },
