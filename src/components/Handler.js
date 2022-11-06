@@ -25,7 +25,7 @@ function Handler() {
                     'display': 'flex',
                     'flex-direction': 'column',
                     'justify-content': 'center',
-                    'font-family': 'cursive',
+                    'font-family': 'Courier New, Courier, monospace',
                     'font-size':'60px',
                     'height': '45vh',
                     'align-items': 'center',
@@ -62,7 +62,7 @@ function Handler() {
                     'flex-direction': "column",
                     'align-items': "center",
                     'justify-content': 'center',
-                    'font-family': 'cursive',
+                    'font-family': 'Courier New, Courier, monospace',
                     'color': 'white',
                     'background': 'linear-gradient(180deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%)'
                 }
@@ -70,6 +70,7 @@ function Handler() {
 
         }
     ]
+
 
 
     // mapping serverObj, checking to see if data is present in each key/val
